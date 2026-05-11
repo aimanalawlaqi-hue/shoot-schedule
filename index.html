@@ -7,12 +7,7 @@
 <style>
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
 
-  @font-face {
-    font-family: 'Thmanyah Serif';
-    src: url('thmanyahserifdisplay-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  /* Custom font removed for web version - using IBM Plex Sans Arabic fallback */
 
   :root {
     --primary: #1a1a1a;
@@ -45,6 +40,18 @@
     height: 40px;
     filter: invert(1);
   }
+
+  .logo-text {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  .cs-brand .logo-text {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+  }
+
 
   /* ===== Top Bar ===== */
   .top-bar {
@@ -145,7 +152,8 @@
     text-align: center;
     padding: 12px;
   }
-  .cs-brand img {
+  .cs-brand .logo-text { color: white; }
+    .cs-brand img {
     height: 32px;
     filter: invert(1);
   }
@@ -523,7 +531,7 @@
 </head>
 <body>
 
-<div class="brand-banner"><img src="thmanyah-logo.png" alt="ثمانية"></div>
+<div class="brand-banner"><span class="logo-text">ثمانية</span></div>
 
 <div class="top-bar">
   <h1>جدول التصوير</h1>
@@ -556,7 +564,7 @@
 
 <!-- ===== Print Cover Page (hidden, shown only during print) ===== -->
 <div class="print-cover" id="printCover">
-  <div class="cover-brand"><img src="thmanyah-logo.png" alt="ثمانية"></div>
+  <div class="cover-brand"><span class="logo-text">ثمانية</span></div>
   <div class="cover-header">
     <h1>جدول التصوير</h1>
     <div class="cover-project-name" id="coverProjectName"></div>
@@ -605,7 +613,7 @@
   <div class="day-page active" id="day-1">
 
     <div class="cs-header">
-      <div class="cs-brand"><img src="thmanyah-logo.png" alt="ثمانية"></div>
+      <div class="cs-brand"><span class="logo-text">ثمانية</span></div>
       <div class="cs-header-title">جدول التصوير</div>
       <div class="cs-header-body">
         <div class="cs-header-right">
@@ -734,7 +742,7 @@
   function getDayTemplate(dayNum, projectName, director, producer, dop) {
     return `
     <div class="cs-header">
-      <div class="cs-brand"><img src="thmanyah-logo.png" alt="ثمانية"></div>
+      <div class="cs-brand"><span class="logo-text">ثمانية</span></div>
       <div class="cs-header-title">جدول التصوير</div>
       <div class="cs-header-body">
         <div class="cs-header-right">
