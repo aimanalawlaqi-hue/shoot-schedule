@@ -43,7 +43,6 @@
   }
   .brand-banner img {
     height: 40px;
-    filter: invert(1);
   }
 
   /* ===== Top Bar ===== */
@@ -147,7 +146,6 @@
   }
   .cs-brand img {
     height: 32px;
-    filter: invert(1);
   }
   .cs-header-title {
     background: #2a2520;
@@ -411,7 +409,6 @@
   }
   .cover-brand img {
     height: 44px;
-    filter: invert(1);
   }
   .cover-header {
     background: #2a2520;
@@ -611,7 +608,7 @@
         <div class="cs-header-right">
           <div class="cs-row"><span class="cs-label">المنتج</span><input class="cs-input" type="text" data-field="producer" placeholder="اسم المنتج"></div>
           <div class="cs-row"><span class="cs-label">المخرج</span><input class="cs-input" type="text" data-field="director" placeholder="اسم المخرج"></div>
-          <div class="cs-row"><span class="cs-label">المصوّر</span><input class="cs-input" type="text" data-field="dop" placeholder="مدير التصوير"></div>
+          <div class="cs-row"><span class="cs-label">المصوِّر</span><input class="cs-input" type="text" data-field="dop" placeholder="مدير التصوير"></div>
           <div class="cs-row"><span class="cs-label">اسم المشروع</span><input class="cs-input" type="text" data-field="projectName" placeholder="مثال: طبق جانبي — الحلقة الأولى"></div>
         </div>
         <div class="cs-header-left">
@@ -740,7 +737,7 @@
         <div class="cs-header-right">
           <div class="cs-row"><span class="cs-label">المنتج</span><input class="cs-input" type="text" data-field="producer" value="${esc(producer)}" placeholder="اسم المنتج"></div>
           <div class="cs-row"><span class="cs-label">المخرج</span><input class="cs-input" type="text" data-field="director" value="${esc(director)}" placeholder="اسم المخرج"></div>
-          <div class="cs-row"><span class="cs-label">المصوّر</span><input class="cs-input" type="text" data-field="dop" value="${esc(dop)}" placeholder="مدير التصوير"></div>
+          <div class="cs-row"><span class="cs-label">المصوِّر</span><input class="cs-input" type="text" data-field="dop" value="${esc(dop)}" placeholder="مدير التصوير"></div>
           <div class="cs-row"><span class="cs-label">اسم المشروع</span><input class="cs-input" type="text" data-field="projectName" value="${esc(projectName)}" placeholder="مثال: طبق جانبي"></div>
         </div>
         <div class="cs-header-left">
@@ -962,7 +959,7 @@
     const roles = [
       { label: 'المنتج', field: 'producer' },
       { label: 'المخرج', field: 'director' },
-      { label: 'المصوّر', field: 'dop' },
+      { label: 'المصوِّر', field: 'dop' },
     ];
     let crewHTML = '';
     roles.forEach(r => {
